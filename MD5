@@ -1,5 +1,6 @@
-e56b3655f84b774c03a1901a23b8d187 *DESCRIPTION
+0b4602e64c2b879a09e5781ffaa3a9b4 *DESCRIPTION
 34f84577e005eb110c5e5981d9788d3b *NAMESPACE
+4fd265f720014e262bcb35da8e6e2841 *NEWS.md
 3863834444360e5ea7b7e85fd4aac219 *R/LogL.probit.R
 157f92bac4138ed517041b98386d7567 *R/Logl.sandACT.R
 89fe6d5d28ab576c2c8713a1f0489fd7 *R/ML.probit.R
@@ -24,7 +25,7 @@ c1f8a497220ccf7f350797ca26644b13 *R/sandACT.R
 fe3dbe9e2a575e0bee4c82092a00d996 *R/se.ols.R
 5ff4f14098431e722e4e9dd433242780 *R/sigmaOLScor0.R
 be045966012ed2898d2bc5f8ac49c45d *R/sigmaOLScor1.R
-d1f7ce0ce0719ef99fa8f14c3075df91 *R/ui.causal.R
+4063b92361bdb66320734fdb643e02c8 *R/ui.causal.R
 4421a07f5d2e3aaf3a26559a3188c2cb *R/ui.ols.R
 a7ec1173fe75bc1ee432f3b99fd09c7c *R/ui.probit.R
 48da1736222af116f6226e42e65516c0 *man/LogL.probit.Rd
@@ -51,6 +52,6 @@ aaa7fb13d347d4b132f8d91d8de74e94 *man/sandImpACE.Rd
 54ff97b7b067a19d997c1e312445a77b *man/se.ols.Rd
 bf0237292571db0ad0f8c9e065c3e518 *man/sigmaOLScor0.Rd
 ab595e14827d93037bdc4715f6d4f37d *man/sigmaOLScor1.Rd
-21edf0f03c4ee5dc32b35671fd752726 *man/ui.causal.Rd
+1fea2eb19ce834d51f24088ee0e82a51 *man/ui.causal.Rd
 dcc0c6cd936e3a36b607c4f1b534247c *man/ui.ols.Rd
 abcf9adee74bff39536375c816946636 *man/ui.probit.Rd

@@ -53,7 +53,7 @@
 #'s1<-3
 #'error<-mvrnorm(n, c(0,0,0), matrix(c(1,0.6,0.9,0.6,4,0.54,0.9,0.54,9), ncol=3))
 #'zstar<-X%*%delta+error[,1]
-#'z<-as.numeric(zstar>0)
+#'z<- zstar>0
 #'y1<-ifelse(x< (-1),0.2*x-0.1*x^2, ifelse(x< 1,0.3*x, ifelse(x<3,0.4-0.1*x^2,-0.2-0.1*x)))+error[,3]
 #'y0<-ifelse(x<1.5, x-0.4*x^2, ifelse(x<2, -0.15-0.25*x+0.5*x^2, 1.85-0.25*x))+error[,2]
 #'y<-y0
@@ -124,6 +124,11 @@ rho.plotrange=c(-0.5,0.5), alpha=0.05){
 	output$plot<-list()
     output$plot$plot=plot	
   
+  z<-z.data[,1]
+  y<-y.data[,1]
+  y0<-y[z==0]
+  y1<-y[z==1]
+      
   X<-model.matrix(lm(out.formula,data=y.data))
   out.model0<-lm(out.formula,data=y.data[z==0,])  
   out.model1<-lm(out.formula,data=y.data[z==1,])  
@@ -133,10 +138,6 @@ rho.plotrange=c(-0.5,0.5), alpha=0.05){
   output$out.model1<-out.model1
   output$treat.model<-treat.model
   
-  z<-z.data[,1]
-  y<-y.data[,1]
-  y0<-y[z==0]
-  y1<-y[z==1]
   X1<-model.matrix(out.model1)
   X0<-model.matrix(out.model0)
   Xz<-model.matrix(treat.model)

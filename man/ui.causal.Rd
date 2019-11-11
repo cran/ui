@@ -73,7 +73,7 @@ s0<-2
 s1<-3
 error<-mvrnorm(n, c(0,0,0), matrix(c(1,0.6,0.9,0.6,4,0.54,0.9,0.54,9), ncol=3))
 zstar<-X\%*\%delta+error[,1]
-z<-as.numeric(zstar>0)
+z<- zstar>0
 y1<-ifelse(x< (-1),0.2*x-0.1*x^2, ifelse(x< 1,0.3*x, ifelse(x<3,0.4-0.1*x^2,-0.2-0.1*x)))+error[,3]
 y0<-ifelse(x<1.5, x-0.4*x^2, ifelse(x<2, -0.15-0.25*x+0.5*x^2, 1.85-0.25*x))+error[,2]
 y<-y0
